@@ -49,21 +49,12 @@ end
 
 ## Installation
 
-Only available on a GitHub repository:
+Add this to your deps:
 
 ```elixir
 def deps do
   [
-    {
-      :cookie_to_jwt_plug,
-      git: "https://github.com/Elonsoft/cookie_to_jwt_plug.git",
-      commit: "<the last commit you like>"
-    }
+    {:cookie_to_jwt_plug, "~> 0.1"}
   ]
 end
 ```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/cookie_to_jwt_plug](https://hexdocs.pm/cookie_to_jwt_plug).
-
