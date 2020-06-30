@@ -48,7 +48,7 @@ defmodule CookieToJwtPlug do
   Entry point for cookied connection.
   """
   def put_session_token(%Plug.Conn{} = conn, token) when is_binary(token) do
-    cookie = "#{@session_token_key}=#{token}; Path=/; Max-Age=#{@max_cookie_age}"
+    cookie = "#{@session_token_key}=#{token}; Path=/; Max-Age=#{@max_cookie_age}; HttpOnly"
     put_resp_header(conn, "set-cookie", cookie)
   end
 end
